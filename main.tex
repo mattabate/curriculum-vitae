@@ -1,0 +1,302 @@
+\documentclass{article}
+\pagenumbering{gobble}
+\usepackage[letterpaper,margin=.5in,footskip=0.1in]{geometry}
+
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{graphicx}
+\usepackage{booktabs} % For formal tables
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{caption, subcaption}
+\usepackage{breqn}
+\usepackage{array, mathtools}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{tabto}
+\usepackage{hyperref}
+
+\setcounter{page}{1}
+\renewcommand{\thepage}{ \hfill Matthew Abate, \arabic{page}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\setlength\parindent{0pt}
+
+\begin{document}
+\begin{center}
+%Name
+\huge{\textbf{Matthew Abate, Ph.D.}}\normalsize
+\end{center}
+\vspace{.15cm}
+
+\noindent\:\:\textbf{\large{Contact}}
+\vspace{.1cm}
+\hrule
+\vspace{-.16cm}
+\begin{tabular}{m{6.9in} m{0in}}
+\begin{tabbing}
+   \hspace{.2em}
+   \= Email:  \href{mailto:matt.abate@gatech.edu}{matt.abate@gatech.edu} 
+   \hspace{14em} 
+   \= LinkedIn:  \href{https://linkedin.com/in/matt-abate/}{linkedin.com/in/matt-abate/}  
+   \\ [.6ex]
+    \> Phone:  (973) 803-3706
+    \> Google Scholar: \href{https://scholar.google.com/citations?user=nyCnX_gAAAAJ&hl=en}{Matthew C. L. Abate}
+    \\[.6ex]
+   \> Webpage: \href{https://mattabate.com}{mattabate.com}
+   \>  
+\end{tabbing}
+\end{tabular}
+\medskip
+
+\noindent\:\:\textbf{\large{Biographical Sketch}}
+\vspace{.1cm}
+\hrule
+\vspace{.2cm}
+
+\begin{tabular}{ m{7.2in}}
+\setlength{\parskip}{.6em}%
+I am an applied mathematician and researcher, living in Jersey City, New Jersey.
+
+From 2017 to Fall 2022, I was a Ph.D. student and academic researcher at Georgia Tech. My research proposed new math-theoretic tools and algorithms studying systems of differential equations with disturbances.
+
+I'm currently employed with TextQL Inc.,\ an New York based AI startup that I joined in 2024.
+My primary role at TextQL is to manage our internal data systems and our internal deployment of AI agents.
+
+Outside of work, I enjoy solving puzzles and studying sequences and patterns. I hope to one day find a solution to the Collatz Conjecture.
+\end{tabular}
+
+\medskip
+\medskip
+\medskip
+\noindent\:\:\textbf{\large{Education}}
+\vspace{.1cm}
+\hrule
+\vspace{.2cm}
+
+\begin{tabular}{ m{6in} m{1in}}
+%%%
+\textbf{Georgia Institute of Technology} - Atlanta, GA & \textit{August 2022} \\
+\textit{Doctor of Philosophy in Robotics} (Advisors: Samuel Coogan and Eric Feron) & \\
+    Dissertation Title: Mixed Monotonicity for Efficient Reachability with Applications to Robust Safe \\
+        Autonomy (\href{https://repository.gatech.edu/entities/publication/d65ceea6-97ce-413f-ac6e-e0837dd1fa96}{site}, \href{https://smartech.gatech.edu/bitstream/handle/1853/67309/ABATE-DISSERTATION-2022.pdf?sequence=1&isAllowed=y}{pdf}) &\\ \\
+%%%
+\textbf{Georgia Institute of Technology} - Atlanta, GA & \textit{December 2021} \\
+\textit{Master of Science in Electrical and Computer Engineering}  
+& \\  \\
+%%%
+\textbf{Georgia Institute of Technology} - Atlanta, GA & \textit{December 2018} \\
+\textit{Master of Science in Mechanical Engineering}  & \\
+    \\
+ \textbf{Thayer School of Engineering at Dartmouth} - Hanover, NH & \textit{June 2017} \\
+    \textit{Bachelor of Engineering:} Concentration in Mechanical Engineering  &  \\ \\
+ \textbf{Dartmouth College} - Hanover, NH & \textit{June 2017} \\
+    \textit{Bachelor of Arts:} Double Major in Engineering Sciences, and Music  & 
+    \\ \\
+\end{tabular}
+\medskip
+\medskip
+
+\noindent\:\:\textbf{\large{Technical Work as an Entrepreneur}}
+\vspace{.1cm}
+\hrule
+\vspace{.2cm}
+
+\begin{tabular}{ m{6in} m{1in}}
+%%%
+\textbf{Determinism Library}  & \textit{March 2024} \\
+Algorithms for modeling nondeterministic processes such as the input-output behavior of language models. Implemented as a Python library with tools from statistics and combinatorics.& \\ \\
+%%%
+\textbf{Webscraper-Writer Agent} & \textit{October 2023} \\
+AI Agent for writing webscraping code, aimed at gathering data from websites with large sitemaps. Implemented in Python using Langchain, AutoGPT and the OpenAI api.
+& \\  \\
+%%%
+\textbf{Multi-Camera Fusion Library} & \textit{December 2022} \\
+Algorithms for merging spatial data from many disparate camera feeds.  Implemented as a Python library with and tools from linear algebra, matrix calculus and numerical optimization.
+& \\  \\
+%%%
+\textbf{Spatial Perception Library} & \textit{August 2022} \\
+Computer vision algorithms for reconstructing 3D scenes from a monocular camera. Implemented as a Python library with tools from differential equations, interval arithmetic, and contraction theory. & \\
+    \\
+\end{tabular}
+
+
+\newpage
+
+
+\noindent\:\:\textbf{\large{Articles in Journals or Magazines}}
+\vspace{.1cm}
+\hrule
+\vspace{.1cm}
+\begin{tabular}{ m{6.9in} m{0in}}
+\begin{itemize}
+    \item[{[J9]}] \textbf{M. Abate}, M. Mote, M. Dor, C. Klett, S. Phillips, K. Lang, P. Tsiotras, E. Feron, and S. Coogan,``Run Time Assurance for Spacecraft Attitude Control Under Nondeterministic Assumptions," \emph{IEEE Transactions on Control Systems Technology}, pp. 1-12, Dec. 2023. DOI: \href{https://doi.org/10.1109/TCST.2023.3340624}{10.1109/TCST.2023.3340624}.
+    %
+    \item[{[J8]}] H. Abdelraouf, E. Feron, C. Klett, \textbf{M. Abate}, and S. Coogan, ``Hierarchy of Quadratic Lyapunov Functions for Linear Time-Varying and Related Systems," \emph{Journal of Guidance, Control, and Dynamics}, pp. 1-12, Dec. 2023. DOI: \href{https://doi.org/10.2514/1.G006658}{10.2514/1.G006658}.    
+    %
+    \item[{[J7]}] K. Hobbs, M. Mote, \textbf{M. Abate}, S. Coogan, and E. Feron, ``Run Time Assurance for Safety-Critical Systems: An Introduction to Safety Filtering Approaches for Complex Control Systems," in \emph{IEEE Control Systems Magazine (CSM)}, 2022. DOI: \href{https://doi.org/10.1109/MCS.2023.3234380}{10.1109/MCS.2023.3234380}.
+    %
+    \item[{[J6]}] \textbf{M. Abate} and S. Coogan, ``Robustly Forward Invariant Sets for Mixed-Monotone Systems," in \emph{IEEE Transactions on Automatic Control (TAC)}, vol. 67, no. 9, pp. 4947-4954, Sept. 2022. DOI: \href{https://ieeexplore.ieee.org/document/9764395}{10.1109/TAC.2022.3170863}.
+    %
+    \item[{[J5]}] \textbf{M. Abate} and S. Coogan, ``Decomposition Functions for Interconnected Mixed Monotone Systems," in \emph{IEEE Control Systems Letters (L-CSS)}, vol. 6, pp. 2120-2125, Jan. 2022. DOI: \href{https://ieeexplore.ieee.org/document/9656539}{10.1109/LCSYS.2021.3136652}.
+    %
+    \item[{[J4]}] M. Srinivasan, \textbf{M. Abate}, G. Nilsson and S. Coogan, ``Extent-Compatible Control Barrier Functions," in \emph{Systems \& Control Letters}, vol. 150, Mar. 2021. DOI: \href{https://www.sciencedirect.com/science/article/abs/pii/S0167691121000256}{10.1016/j.sysconle.2021.104895}.
+    %
+    \item[{[J3]}] \textbf{M. Abate}, W. Stuckey, L. Lerner, E. Feron and S. Coogan, ``Memory-Loss Resilient Controller Design for Temporal Logic Constraints," in \emph{Cyber-Physical Systems}, vol. 7, no. 4, pp. 221-242, Oct. 2020. DOI: \href{https://www.tandfonline.com/doi/abs/10.1080/23335777.2020.1837248}{10.1080/23335777.2020.1837248}.
+    %
+    \item[{[J2]}] \textbf{M. Abate}, M. Dutreix and S. Coogan, ``Tight Decomposition Functions for Continuous-Time Mixed-Monotone Systems with Disturbances," in \emph{IEEE Control Systems Letters (L-CSS)}, vol. 5, no. 1, pp. 139-144, Jan. 2021. DOI:  \href{https://doi.org/10.1109/LCSYS.2020.3001085}{10.1109/LCSYS.2020.3001085}. 
+    \item[{[J1]}] D. Wang, N. Hu, S. Huang, A. M. Nasab, K. Yang, \textbf{M. Abate}, X. Yu, L. Tan, W. Shan, Z. Chen, ``Buckling and post-buckling of an elastic rod embedded in a bilayer matrix," \emph{Extreme Mechanics Letters}, vol. 25, pp. 1-6, Nov. 2018. DOI: \href{https://doi.org/10.1016/j.eml.2018.10.004}{10.1016/J.EML.2018.10.004}
+\end{itemize}
+\end{tabular}
+\medskip
+
+
+\noindent\:\:\textbf{\large{Articles in Conference Proceedings}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{ m{6.9in} m{0in}}
+\begin{itemize}
+\item[{[C17]}] A. Frommer, \textbf{M. Abate}, P. Rivera-Ortiz, and Y. Diaz-Mercado, ``A Capture Strategy for Multi-Pursuer Coordination Against a Fast Evader in 3D Reach-Avoid Games," \emph{Modeling, Estimation and Control Conference (MECC)}, pp. 217-222, 2023.  DOI: \href{https://doi.org/10.1016/j.ifacol.2023.12.027}{10.1016/j.ifacol.2023.12.027}.
+%
+\item[{[C16]}] A. Davydov, S. Jafarpour, \textbf{M. Abate}, F. Bullo, and S. Coogan, ``Comparative Analysis of Interval Reachability for Robust Implicit and Feedforward Neural Networks," \emph{2022 IEEE 61th Conference on Decision and Control (CDC)}, 2022.  DOI: \href{https://doi.org/10.1109/CDC51059.2022.9993217}{10.1109/CDC51059.2022.9993217}.
+%
+\item[{[C15]}] S. Jafarpour*, A. Davydov*, \textbf{M. Abate}, F. Bullo and S. Coogan,``Robust Training and Verification of Implicit Neural Networks: A Non-Euclidean Contractive Approach," \emph{1st Workshop on Formal Verification of Machine Learning}, 2022. DOI: 
+\href{https://doi.org/10.48550/arXiv.2208.03889}{10.48550/arXiv.2208.03889}.
+
+\item[{[C14]}] S. Jafarpour*, \textbf{M. Abate}*, A. Davydov*, F. Bullo and S. Coogan, ``Robustness Certificates for Implicit Neural Networks: A Mixed Monotone Contractive Approach," \emph{4th Annual Learning for Dynamics \& Control Conference (L4DC)}, 2022. \textbf{Selected for Oral Presentation---Top 20 percent of accepted papers}. Corpus ID: \href{https://www.semanticscholar.org/paper/Robustness-Certificates-for-Implicit-Neural-A-Mixed-Jafarpour-Abate/8e39945d82550adbe7833836f55dbb140b9312dd}{245117816}.
+%
+\item[{[C13]}] C. Llanes, \textbf{M. Abate} and S. Coogan, ``Safety from Fast, In-the-Loop Reachability with Application to UAVs," \emph{13th ACM / IEEE International Conference on Cyber-Physical Systems (ICCPS '22)}, pp. 127-136, 2022. DOI: \href{https://doi.org/10.1109/ICCPS54341.2022.00018}{10.1109/ICCPS54341.2022.00018}.
+ %
+    \item[{[C12]}] C. Llanes, \textbf{M. Abate} and S. Coogan, ``Safety from In-the-Loop Reachability for Cyber-Physical Systems," \emph{Workshop on Computation-Aware Algorithmic Design for Cyber-Physical Systems (CAADCPS '21)}, 2021. DOI: \href{https://doi.org/10.1145/3457335.3461706}{10.1145/3457335.3461706}.
+%
+\end{itemize}
+\end{tabular}
+
+
+\newpage
+
+\begin{tabular}{ m{6.9in} m{0in}}
+\begin{itemize}
+    \item[{[C11]}] \textbf{M. Abate}, C. Klett, S. Coogan and E. Feron, ``Pointwise-in-Time Analysis and Non-Quadratic Lyapunov Functions for Linear Time-Varying Systems," \emph{2021 American Control Conference (ACC)}, pp. 3550-3555, 2021. DOI: \href{https://ieeexplore.ieee.org/document/9483291}{10.23919/ACC50511.2021.9483291}.
+    \item[{[C10]}] \textbf{M. Abate} and S. Coogan, ``Improving the Fidelity of Mixed-Monotone Reachable Set Approximations via State Transformations," \emph{2021 American Control Conference (ACC)}, pp. 4674-4679, 2021. DOI: \href{https://ieeexplore.ieee.org/document/9483264}{10.23919/ACC50511.2021.9483264}.
+%
+\item[{[C9]}] G. Immanuel, \textbf{M. Abate} and Eric Feron, ``Lyapunov Differential Equation Hierarchy and Polynomial Lyapunov Functions for Switched Implicit Systems," \emph{2021 American Control Conference (ACC)}, pp. 2309-2314, 2021. DOI: \href{https://ieeexplore.ieee.org/document/9482717}{10.23919/ACC50511.2021.9482717}.
+%
+\item[{[C8]}] C. Klett, \textbf{M. Abate}, S. Coogan and E. Feron, ``A Numerical Method to Compute Stability Margins of Switching Linear Systems," \emph{2021 American Control Conference (ACC)}, pp. 864-869, 2021. DOI: \href{https://ieeexplore.ieee.org/document/9483141}{10.23919/ACC50511.2021.9483141}.
+%
+\item[{[C7]}] \textbf{M. Abate}, M. Mote, E. Feron and S. Coogan, ``Verification and Runtime Assurance for Dynamical Systems with Uncertainty," \emph{Proceedings of the 24th International Conference on Hybrid Systems: Computation and Control (HSCC)}, 2021. 
+ DOI: \href{https://doi.org/10.1145/3447928.3456656}{10.1145/3447928.3456656}.
+%
+\item[{[C6]}] \textbf{M. Abate} and S. Coogan, ``Enforcing Safety at Runtime for Systems with Disturbances," \emph{2020 IEEE 59th Conference on Decision and Control (CDC)}, pp. 2038-2043, 2020. DOI: \href{https://ieeexplore.ieee.org/document/9304203}{10.1109/CDC42340.2020.9304203}.
+%
+\item[{[C5]}] \textbf{M. Abate} and S. Coogan, ``Computing Robustly Forward Invariant Sets for Mixed-Monotone Systems," \emph{2020 IEEE 59th Conference on Decision and Control (CDC)}, pp. 4553-4559, 2020. \textbf{Hybrid Systems TC Outstanding Student Paper Finalist}. DOI: \href{https://ieeexplore.ieee.org/document/9304461}{10.1109/CDC42340.2020.9304461}.
+%
+\item[{[C4]}] \textbf{M. Abate}, C. Klett, S. Coogan and E. Feron, ``Lyapunov Differential Equation Hierarchy and Polynomial Lyapunov Functions for Switched Linear Systems," \emph{2020 American Control Conference (ACC)}, pp. 5322-5327, 2020. DOI: \href{https://ieeexplore.ieee.org/document/9147662}{10.23919/ACC45564.2020.9147662}.
+%
+\item[{[C3]}] C. Klett, \textbf{M. Abate}, Y. Yoon, S. Coogan and E. Feron, ``Bounding the State Covariance Matrix for Switched Linear Systems with Noise," \emph{2020 American Control Conference (ACC)}, pp. 2876-2881, 2020. DOI: \href{https://ieeexplore.ieee.org/document/9147787}{10.23919/ACC45564.2020.9147787}.
+%
+\item[{[C2]}] M. Dutreix, C. Santoyo, \textbf{M. Abate} and S. Coogan, ``Interval-Valued Markov Chain Abstraction of Stochastic Systems Using Barrier Functions," \emph{2020 American Control Conference (ACC)}, pp. 3583-3588, 2020. DOI: \href{https://ieeexplore.ieee.org/document/9147744}{10.23919/ACC45564.2020.9147744}.
+
+\item[{[C1]}] \textbf{M. Abate}, E. Feron and S. Coogan, ``Monitor-Based Runtime Assurance for Temporal Logic Specifications," \emph{2019 IEEE 58th Conference on Decision and Control (CDC)}, pp. 1997-2002, 2019. DOI: \href{https://ieeexplore.ieee.org/document/9029716}{10.1109/CDC40024.2019.9029716}.
+\end{itemize}
+\end{tabular}
+\medskip
+
+\noindent\:\:\textbf{\large{Other Publications, and Personal Projects}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{ m{6.9in} m{0in}}
+\begin{itemize}
+\item[{[O7]}] P. Mallory et al., ``We Found the Best Shuffled Deck," 2024. Paper author. In Submission, Sigbovik 2024.
+\item[{[O6]}] M. Abate, ``Autograms," \emph{The Journal of Wordplay}, Issue \#4, pp. 54 - 59, 19 Feb., 2023 (\href{https://ubercross.com/TJoW4.pdf#page=54}{read}).
+\item[{[O5]}] ``How to Write a Paper," 2024 (\href{https://mattabate.com/api/v1/pdfs?paperName=howtowriteapaper.pdf}{pdf}).
+\item[{[O4]}] mattsmovielist.com: an Elo ranking game for movies and TV shows. Summer 2023 (\href{https://mattsmovielist.com/}{site}).
+\item[{[O3]}] BeamerGen: A LaTex editor with an AI agent that knows your papers. Spring 2023 (\href{https://youtu.be/rJo4U4zfqL8?si=gS9_p_vw7bP08yyp&t=274}{demo}, \href{https://beamergen.vercel.app/}{site}).
+\item[{[O2]}] Tango (2022): A Fugue in Film (\href{https://www.youtube.com/watch?v=18Q6LiFWIv8}{watch}).
+\item[{[O1]}] ``Gas-displacement Volumetry," inventor. US Patent: \href{https://patents.google.com/patent/US10337902B2/en}{US10337902B2}.
+\end{itemize}
+\end{tabular}
+
+\newpage
+
+\noindent\:\:\textbf{\large{Invited Talks}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{ m{6.9in} m{0in}}
+\begin{itemize}
+    \item[{[T2]}] ``Efficient Reachability Analysis for Mixed Monotone Dynamical Systems," Invited Lecture, \textit{Department of Mechanical Engineering, University of California Santa Barbara}, Virtual, Feb. 16 2022.
+    \item[{[T1]}] ``Correctness with Complex Constraints: Runtime Assurance and Temporal Logics," Invited Lecture, \textit{Air Force Research Laboratory, Controls Group}, Dayton, OH, Nov. 21 2019.  
+\end{itemize}
+\end{tabular}
+
+\noindent\:\:\textbf{\large{Mentoring}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{m{6.9in} m{0in}}
+\begin{tabbing}
+Jul. 2020 \hspace{.1em} \=-\hspace{.5em}\= Jun. 2021 \hspace{1em}\= Christian Llanes (Ph.D. Student, Robotics, Georgia Tech) \\[.6ex]
+May 2020 \>-\> Dec. 2020 \> Christopher Lindbeck (B.S. Student, CS, Georgia Tech) \\[.6ex]
+May 2020 \>-\> Dec. 2020 \> Thomas Contis (B.S. Student, ECE, Georgia Tech) \\[.6ex]
+Jan. 2019 \>-\> Jan. 2020 \> Elizabeth Pruka (B.S. Student, ECE, Georgia Tech) \\[.6ex]
+Aug. 2018 \>  - \> Oct. 2020 \> William Stuckey (M.S. Student, ECE, Georgia Tech) \\
+\end{tabbing}
+\end{tabular}
+
+\noindent\:\:\textbf{\large{Teaching}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{m{6.9in} m{0in}}
+\begin{tabbing}
+    Fall 2021 \hspace{1.2em} \= Teaching Practicum (Advisor: Nader Sadegh), Georgia Tech ME 6401, Linear Control Systems\\[.6ex]
+    Fall 2021 \hspace{1em} \> Guest Lecturer (Main Professor: Samuel Coogan), Georgia Tech ECE 3550, Feedback Control \\ \> Systems  \\ [.6ex]
+    Spring 2021 \hspace{1em} \> Guest Lecturer (Main Professor: Samuel Coogan), Georgia Tech ECE 6552, Nonlinear Systems and \\ \>Control  \\
+\end{tabbing}
+\end{tabular}
+
+\noindent\:\:\textbf{\large{Honors, Nominations and Leadership}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{m{6.9in} m{0in}}
+\begin{tabbing}
+    2022 \hspace{2.8em} \= Best Ph.D. Thesis Award, Nomination (Sigma Xi, Georgia Tech) \\ [.6ex]
+    2022 \hspace{2.8em} \= Hybrid Systems TC Outstanding Student Paper Prize, Finalist (IEEE, Control Systems Society) \\ [.6ex]
+    2017 \hspace{2.8em} \= McDonald-Smith Prize (Dartmouth College, Department of Music)  \\ [.6ex]
+    %
+    2016  \> Citation for Superior Performance as a Teaching Assistant  (Thayer School of Engineering at Dartmouth \\ 
+    \> College)\\ [.6ex]
+    %
+    2015  \> Chapter President (Alpha Chi Alpha Fraternity at Dartmouth College)\\ [.6ex]
+    %
+    2011  \> Eagle Scout  (Boy Scouts of America)\\
+\end{tabbing}
+\end{tabular}
+
+\noindent\:\:\textbf{\large{References}}
+\vspace{.1cm}
+\hrule
+\begin{tabular}{m{6.9in} m{0in}}
+\begin{tabbing}
+\hspace{0.5em} \= 
+\textbf{Samuel Coogan} \hspace{17em} \= 
+\textbf{Eric Feron}\\
+\>Electrical and Computer Engineering \> 
+ Electrical and Computer Engineering\\
+\> Georgia Institute of Technology \> 
+King Abdullah University of Science and Technology\\
+\> \href{mailto:sam.coogan@gatech.edu}{sam.coogan@gatech.edu} \> 
+\href{mailto:eric.feron@kaust.edu.sa}{eric.feron@kaust.edu.sa}
+\end{tabbing}
+\end{tabular}
+
+
+\end{document}
